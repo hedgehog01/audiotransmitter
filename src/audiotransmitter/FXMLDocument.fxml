@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="audiotransmitter.FXMLDocumentController">
+    <children>
+        <Button fx:id="clientButton" layoutX="243.0" layoutY="302.0" onAction="#stopClient" prefHeight="25.0" prefWidth="84.0" text="Stop Audio" />
+        <Label fx:id="label" layoutX="227.0" layoutY="35.0" minHeight="16" minWidth="69" text="Start server here" />
+      <Button fx:id="serverStartButton" layoutX="237.0" layoutY="77.0" mnemonicParsing="false" onAction="#startServer" prefHeight="25.0" prefWidth="84.0" text="Start Server" />
+      <Button fx:id="sendAudioButton" layoutX="242.0" layoutY="263.0" mnemonicParsing="false" onAction="#startClient" prefHeight="25.0" prefWidth="84.0" text="Send Audio" />
+      <Button layoutX="242.0" layoutY="352.0" mnemonicParsing="false" onAction="#doExit" text="Exit program" />
+      <Button fx:id="serverStopButton" layoutX="238.0" layoutY="116.0" mnemonicParsing="false" onAction="#stopServer" prefHeight="25.0" prefWidth="84.0" text="Stop Server" />
+      <TextField fx:id="serverIPTextField" layoutX="176.0" layoutY="222.0" prefHeight="25.0" prefWidth="226.0" />
+      <Label layoutX="166.0" layoutY="195.0" text="Enter the Server address the client will send data to" />
+      <Label fx:id="errorLabel" layoutX="112.0" layoutY="413.0" prefHeight="96.0" prefWidth="319.0" />
+    </children>
+</AnchorPane>
